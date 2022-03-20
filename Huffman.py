@@ -1,3 +1,4 @@
+from collections import Counter
 class Node:
     def __init__(self, character, probability, leftnode, rightnode):
         self.character = character
@@ -13,6 +14,8 @@ frequency_list = {}
 
 for i in text:
     frequency_list[i] = frequency_list.setdefault(i, 0) + 1
+
+#charFre = Counter(text)
 
 node_list = []
 # node_list.append(Node('x1', 0.05, None, None))

@@ -22,8 +22,7 @@ for i in range(1, len(code)):
         count = 0
         # print(f" for {i}: ")
         for j in range(i + 1, len(code)):
-            val = 1 << int(math.log2(i))
-            if j & val == val:
+            if j & i == i:
                 # print(j, end=" ")
                 if code[j] == 1:
                     count += 1
